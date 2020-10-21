@@ -1,0 +1,46 @@
+.App {
+    h2 {
+        margin: 20px 0;
+    }
+    
+    ul {
+        flex-wrap: wrap;
+        list-style-type: none;
+        padding: 0;
+    
+        li {
+            width: 30%;
+            margin: 10px;
+    
+            > div {
+                width: 100%;
+                padding: 20px;
+
+                div {
+                    display: flex;
+                    word-wrap: break-all;
+                }
+            }
+    
+            button {
+                margin-top: 10px;
+            }
+    
+            form {
+                margin: 10px 0;
+            }
+        }
+    }
+}
+
+@media only screen and (max-width: 768px) {
+    .App ul li {
+        width: 50%;
+    }
+}
+
+@media only screen and (max-width: 468px) {
+    .App ul li {
+        width: 100%;
+    }
+}

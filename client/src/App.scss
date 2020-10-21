@@ -1,0 +1,29 @@
+.App {
+    padding: 20px;
+
+    button {
+        outline: none; 
+    } 
+
+    > *, .title-box {
+        display: flex;
+        justify-content: center;
+    }
+
+    h1, h2 {
+        position: relative;
+
+        &::after {
+            content: '';
+            width: 98%;
+            height: 10px;
+            background-color: #ffca37;
+            display: block;
+            border-radius: 25px;
+            position: absolute;
+            z-index: -1;
+            bottom: 4px;
+            left: 10px;
+        }
+    }
+}
